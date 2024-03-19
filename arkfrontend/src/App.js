@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Container } from "react-bootstrap";
+import HomeScreen from './components/screens/HomeScreen';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <main>
         <Container>
-          {/* 2:59:20 */}
+          <HomeScreen />
         </Container>
       </main>
       <Footer />
@@ -18,3 +19,6 @@ function App() {
 }
 
 export default App;
+
+
+//14 impor Homescreens and add it. go to Homescreen
