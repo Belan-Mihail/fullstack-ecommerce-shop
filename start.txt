@@ -1,0 +1,13 @@
+1 create react app
+2 create components folder wit header.js and footer.js with rfce
+3 delete all from app.js add header and footer
+4 add and install react boostrap 
+5 edit footer
+6 sdd <main> and container to app.js
+7 edit index.css
+8 add navbar in header component (add base html)
+9 add fontawersome in index.html and add fontawersome to navbar 
+10 in src folder create products.js
+11 create images folder in public
+12 inside components folder create screens folder and HomeScreen.js and rfce
+13 create products.js component - next steps inside files
