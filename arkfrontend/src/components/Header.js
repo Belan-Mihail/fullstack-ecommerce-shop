@@ -1,14 +1,59 @@
 import React from "react";
-import { Navbar, Nav, Container, NavDropdown, NavLink } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import "./styles/Header.css";
+import { LinkContainer } from 'react-router-bootstrap'
 
 function Header() {
+  // return (
+  //   <div>
+  //     <Navbar bg="dark" variant="dark">
+  //       <Container className="NavContainer">
+  //       <Link to="/" className="NavLinks">
+  //       <Navbar.Brand>A.R.K</Navbar.Brand>
+  //       </Link>
+
+  //         <Navbar.Toggle aria-controls="navbarScroll" />
+  //         <Navbar.Collapse id="navbarScroll">
+  //           <Nav
+  //             className="mr-auto my-2 my-lg-0"
+  //             style={{ maxHeight: "100px" }}
+  //             navbarScroll
+  //           >
+  //             <Link to="/" className="NavLinks">
+  //                 <i className="fas fa-home"></i> Home
+  //             </Link>
+
+  //             <Link to="/cart" className="NavLinks">
+  //                 <i className="fas fa-shopping-cart"></i> Einkaufskorb
+  //             </Link>
+
+  //               <NavDropdown id="username">
+  //                 <Link to="/profile" className="NavLinks">
+  //                   <NavDropdown.Item>Profil</NavDropdown.Item>
+  //                 </Link>
+
+  //                 <NavDropdown.Item>
+  //                   Ausloggen
+  //                 </NavDropdown.Item>
+  //               </NavDropdown>
+
+  //               <Link to="/login" className="NavLinks">
+  //                   <i className="fas fa-user"></i> Einloggen
+  //               </Link>
+
+  //           </Nav>
+  //         </Navbar.Collapse>
+  //       </Container>
+  //     </Navbar>
+  //   </div>
+  // );
   return (
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <NavLink to="/" LinkContainer>
-            <Navbar.Brand>Marke</Navbar.Brand>
-          </NavLink>
+          <LinkContainer to="/" >
+            <Navbar.Brand>A.R.K</Navbar.Brand>
+          </LinkContainer>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -17,34 +62,34 @@ function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <NavLink to="/">
+              <LinkContainer to="/">
                 <Nav.Link>
                   <i className="fas fa-home"></i> Home
                 </Nav.Link>
-              </NavLink>
+              </LinkContainer>
 
-              <NavLink to="/cart">
+              <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i> Einkaufskorb
+                  <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
-              </NavLink>
-              
+              </LinkContainer>
+
                 <NavDropdown id="username">
-                  <NavLink to="/profile">
-                    <NavDropdown.Item>Profil</NavDropdown.Item>
-                  </NavLink>
+                  <LinkContainer to="/profile">
+                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                  </LinkContainer>
 
                   <NavDropdown.Item>
-                    Ausloggen
+                    Logout
                   </NavDropdown.Item>
                 </NavDropdown>
-              
-                <NavLink to="/login">
+
+                <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i> Einloggen
+                    <i className="fas fa-user"></i> Login
                   </Nav.Link>
-                </NavLink>
-              
+                </LinkContainer>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -54,3 +99,7 @@ function Header() {
 }
 
 export default Header;
+
+//21 import { LinkContainer } from 'react-router-bootstrap'
+
+// 4:05
