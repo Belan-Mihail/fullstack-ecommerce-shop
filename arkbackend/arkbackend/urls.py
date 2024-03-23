@@ -21,5 +21,5 @@ urlpatterns = [
     path('api/', include('app.urls'))
 ]
 
-# 30 add api/ to app.urls path
+# 30 add api/ to app.urls path - install django rest and add it to settings - go to view app
 # 5:02:11
