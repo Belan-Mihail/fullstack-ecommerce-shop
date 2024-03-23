@@ -44,6 +44,6 @@ export default Product
 //16 add jsx (wothout ratings and link). create Rating.js in components and go to it
 //18 give value,text,color props to Rating component
 //19 instal react router dom and npm install -S react-router-bootstrap - go app.js
-//21 change <a> to Link and import { Link } from 'react-router-bootstrap'
+//21 change <a> to Link and import { Link } from 'react-router-bootstrap' - go to product screen
 
 // 3:59:00
